@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    tools:context="com.notixia.whh.mytestapplication.activities.MainActivity">
+
+    <com.google.android.cameraview.CameraView
+        android:id="@+id/cvCameraView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:keepScreenOn="true"
+        android:adjustViewBounds="true"
+        app:autoFocus="true"
+        app:aspectRatio="4:3"
+        app:facing="front"
+        app:flash="auto" />
+
+    <ImageView
+        android:layout_toRightOf="@+id/cvCameraView"
+        android:id="@+id/imageView1"
+        android:layout_height="250dp"
+        android:layout_width="250dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+
+
+    <Button
+        android:id="@+id/btPicture"
+        android:layout_below="@+id/cvCameraView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take a picture"/>
+
+</RelativeLayout>

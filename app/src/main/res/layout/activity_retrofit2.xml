@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activities.Retrofit2Activity"
+    tools:showIn="@layout/activity_retrofit2">
+
+    <TextView
+        android:id="@+id/tv_jo_adoid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:text="ADOID"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_notice_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@+id/tv_jo_adoid"/>
+
+
+</RelativeLayout>
